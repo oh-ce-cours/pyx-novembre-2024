@@ -9,8 +9,6 @@ for nombre in range(1, 101):
         resultat = resultat + "fizz"
     if nombre % 5 == 0:
         resultat += "buzz"
-    if nombre % 7 == 0:
-        resultat += "bazz"
     if resultat == "":
         resultat = nombre
     print(resultat)
