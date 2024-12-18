@@ -5,6 +5,6 @@ print(1 == 2)
 
 age = 29
 if age < 18:
-    print("majeur")
+    print("mineur")
     if age < 10:
         print("bébé")
