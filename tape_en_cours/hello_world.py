@@ -2,3 +2,15 @@ import pandas
 
 print("hello world")
 print(1 == 2)
+
+for nombre in range(1, 101):
+    resultat = ""
+    if nombre % 3 == 0:
+        resultat = resultat + "fizz"
+    if nombre % 5 == 0:
+        resultat += "buzz"
+    if nombre % 7 == 0:
+        resultat += "bazz"
+    if resultat == "":
+        resultat = nombre
+    print(resultat)
