@@ -14,3 +14,6 @@ def fizzbuzz() -> int:
         if resultat == "":
             resultat = nombre
         return resultat
+
+
+fizzbuzz()
