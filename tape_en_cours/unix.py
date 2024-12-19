@@ -9,7 +9,7 @@ def output(lines):
 
 
 def head(lines: list[str]) -> list[str]:
-    output(lines[:10])
+    return lines[:10]
 
 
 def tail():
