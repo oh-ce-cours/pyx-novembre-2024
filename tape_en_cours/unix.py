@@ -25,6 +25,7 @@ file_output(head(lines), filename="./output.txt")
 
 try:
     f = open("./output.txt", "r")
+    1 / 0
     f.read()
 except ZeroDivisionError:
     print("une exception")
