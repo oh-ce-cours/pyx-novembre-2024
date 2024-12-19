@@ -8,7 +8,7 @@ def output(lines):
         print(line, end="")
 
 
-def head():
+def head(lines: list[str]) -> list[str]:
     output(lines[:10])
 
 
