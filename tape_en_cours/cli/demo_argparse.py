@@ -1,10 +1,6 @@
 import argparse
 
 
-def addition(num1, num2):
-    return num1 + num2
-
-
 def main():
     parser = argparse.ArgumentParser(description="Additionne deux nombres.")
     parser.add_argument("num1", type=float, help="Le premier nombre")
