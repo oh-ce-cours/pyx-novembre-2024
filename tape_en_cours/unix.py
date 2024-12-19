@@ -8,9 +8,9 @@ def output(lines):
         print(line, end="")
 
 
-def head(lines: list[str]) -> list[str]:
+def head(c: list[str]) -> list[str]:
     return lines[:10]
 
 
-def tail(lines: list[str]) -> list[str]):
+def tail(lines: list[str]) -> list[str]:
     return lines[-10:]
