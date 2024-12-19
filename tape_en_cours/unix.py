@@ -1,6 +1,6 @@
 with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
     lines = f.readlines()
-f.closed
+print(f.closed)
 
 
 def output(content):
