@@ -1,6 +1,9 @@
-with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
-    lines = f.readlines()
-    1 / 0
+try:
+    with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
+        lines = f.readlines()
+        1 / 0
+except:
+    pass
 print(f.closed)
 
 
