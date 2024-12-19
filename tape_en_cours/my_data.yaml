@@ -5,8 +5,6 @@ address:
   street_address: 21 2nd Street
 age: 27
 children:
-- Catherine
-- Thomas
 - Trevor
 first_name: John
 is_alive: true
@@ -16,4 +14,4 @@ phone_numbers:
   type: home
 - number: 646 555-4567
   type: office
-spouse: null
+spouse: true
