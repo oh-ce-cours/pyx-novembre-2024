@@ -12,5 +12,5 @@ def head(lines: list[str]) -> list[str]:
     return lines[:10]
 
 
-def tail():
-    output(lines[-10:])
+def tail(lines: list[str]) -> list[str]):
+    return lines[-10:]
