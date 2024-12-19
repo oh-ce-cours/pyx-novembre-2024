@@ -12,7 +12,7 @@ def main():
 
     args = parser.parse_args()
 
-    result = args.num1 + args.num2
+    result = addition(args.num1, args.num2)
     print(f"La somme de {args.num1} et {args.num2} est {result}")
 
 
