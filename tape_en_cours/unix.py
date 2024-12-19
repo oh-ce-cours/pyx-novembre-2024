@@ -1,6 +1,5 @@
-f = open("./tape_en_cours/hello_world.py", encoding="utf8")
-lines = f.readlines()
-f.close()
+with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
+    lines = f.readlines()
 
 
 def output(content):
