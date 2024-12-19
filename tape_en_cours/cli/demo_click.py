@@ -1,6 +1,6 @@
 import click
 
-from utils import addition, data
+from utils import addition
 
 # ou
 # import utils
