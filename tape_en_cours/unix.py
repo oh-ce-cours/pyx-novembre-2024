@@ -20,4 +20,4 @@ def tail(content: list[str]) -> list[str]:
     return content[-10:]
 
 
-file_output(tail(lines))
+file_output(tail(lines), filename="./output.txt")
