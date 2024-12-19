@@ -9,10 +9,8 @@ def output(lines):
 
 
 def head():
-    for line in lines[:10]:
-        print(line, end="")
+    output(lines[:10])
 
 
 def tail():
-    for line in lines[-10:]:
-        print(line, end="")
+    output(lines[-10:])
