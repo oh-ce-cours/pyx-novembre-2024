@@ -9,7 +9,7 @@ def output(content):
 
 
 def file_output(content, filename):
-    open(filename, "w").writelines(content)
+    open(filename, "w", encoding="utf8").writelines(content)
 
 
 def head(content: list[str]) -> list[str]:
