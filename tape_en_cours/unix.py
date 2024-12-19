@@ -30,5 +30,7 @@ try:
 except ZeroDivisionError:
     f.close()
     print("une exception")
+finally:
+    f.close()
 
 print(f.closed)
