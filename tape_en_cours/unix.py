@@ -3,6 +3,11 @@ lines = f.readlines()
 f.close()
 
 
+def output(lines):
+    for line in lines:
+        print(line, end="")
+
+
 def head():
     for line in lines[:10]:
         print(line, end="")
