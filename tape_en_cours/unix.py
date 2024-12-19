@@ -27,8 +27,8 @@ try:
     f = open("./output.txt", "r")
     1 / 0
     f.read()
+    f.close()
 except ZeroDivisionError:
     print("une exception")
-finally:
-    f.close()
-    print(f.closed)
+
+print(f.closed)
