@@ -11,6 +11,6 @@ def main():
     print(soustraction(1, 2) == -1)
 
 
-print(__name__)
+print("dans utils", __name__)
 if __name__ == "__main__":
     main()
