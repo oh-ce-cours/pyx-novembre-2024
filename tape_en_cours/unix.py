@@ -1,6 +1,5 @@
 f = open("./tape_en_cours/hello_world.py", encoding="utf8")
 lines = f.readlines()
-f.close()
 
 
 def output(content):
@@ -9,7 +8,7 @@ def output(content):
 
 
 def file_output(content, filename):
-    f = open(filename, "w", encoding="utf8").writelines(content)
+    open(filename, "w", encoding="utf8").writelines(content)
 
 
 def head(content):
