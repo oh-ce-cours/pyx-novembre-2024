@@ -1,5 +1,6 @@
 import click
-from utils import addition, soustraction
+from utils import addition
+import utils
 
 
 @click.command()
