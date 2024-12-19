@@ -16,4 +16,7 @@ def fizzbuzz() -> int:
         return resultat
 
 
+# écrit du code
+
+
 fizzbuzz()
