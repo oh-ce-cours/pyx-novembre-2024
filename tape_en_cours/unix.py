@@ -14,3 +14,6 @@ def head(content: list[str]) -> list[str]:
 
 def tail(content: list[str]) -> list[str]:
     return content[-10:]
+
+
+output(head(lines))
