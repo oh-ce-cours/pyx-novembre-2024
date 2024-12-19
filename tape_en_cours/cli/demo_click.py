@@ -6,7 +6,7 @@ import click
 # import utils
 
 # # ou
-from utils import *
+# from utils import *
 
 
 @click.command()
