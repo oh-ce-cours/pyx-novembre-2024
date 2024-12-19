@@ -8,6 +8,10 @@ def output(content):
         print(line, end="")
 
 
+def file_output(content, filename):
+    open(filename, "w").writelines(content)
+
+
 def head(content: list[str]) -> list[str]:
     return content[:10]
 
