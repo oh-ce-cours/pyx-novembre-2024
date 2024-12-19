@@ -26,11 +26,10 @@ file_output(head(lines), filename="./output.txt")
 try:
     f = open("./output.txt", "r")
     f.read()
-    f.close()
 except ZeroDivisionError:
-    f.close()
     print("une exception")
 finally:
+    print("dans finally")
     f.close()
 
 print(f.closed)
