@@ -4,7 +4,7 @@ try:
         1 / 0
 except:
     pass
-print(f.closed)
+print("is closed", f.closed)
 
 
 def output(content):
