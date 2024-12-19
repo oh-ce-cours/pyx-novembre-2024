@@ -2,6 +2,7 @@ import click
 
 from utils import addition
 
+print("apres import")
 # ou
 # import utils
 
