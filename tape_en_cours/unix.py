@@ -22,3 +22,4 @@ def tail(content: list[str]) -> list[str]:
 
 
 file_output(head(lines), filename="./output.txt")
+file_output(tail(lines), filename="./output.txt")
