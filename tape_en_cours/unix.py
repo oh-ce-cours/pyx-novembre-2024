@@ -22,3 +22,6 @@ def tail(content: list[str]) -> list[str]:
 
 
 file_output(head(lines), filename="./output.txt")
+
+f = open("./output.txt", "r").read()
+f.close()
