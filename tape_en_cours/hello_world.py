@@ -15,8 +15,3 @@ def fizzbuzz() -> int:
             resultat = nombre
         return resultat
 
-
-# écrit du code
-
-
-fizzbuzz()
