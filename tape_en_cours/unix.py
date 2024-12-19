@@ -1,9 +1,6 @@
-try:
-    with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
-        lines = f.readlines()
-except:
-    pass
-print("is closed", f.closed)
+with open("./tape_en_cours/hello_world.py", encoding="utf8") as f:
+    lines = f.readlines()
+print(f.closed)
 
 
 def output(content):
