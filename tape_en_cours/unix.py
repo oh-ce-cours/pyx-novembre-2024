@@ -23,6 +23,11 @@ def tail(content: list[str]) -> list[str]:
 
 file_output(head(lines), filename="./output.txt")
 
-f = open("./output.txt", "r")
-f.read()
-f.close()
+try:
+    f = open("./output.txt", "r")
+    f.read()
+except:
+    pass
+finally:
+    f.close()
+    print(f.closed)
