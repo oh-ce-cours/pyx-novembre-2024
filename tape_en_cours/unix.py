@@ -9,8 +9,8 @@ def output(content):
 
 
 def file_output(content, filename):
-    with open(filename, "w", encoding="utf8") as f:
-        f.writelines(content)
+    with open(filename, "w", encoding="utf8") as f_handler:
+        f_handler.writelines(content)
 
 
 def head(content):
