@@ -18,5 +18,6 @@ def add(num1, num2):
     print(f"La somme de {num1} et {num2} est {result}")
 
 
+print("dans demo click", __name__)
 if __name__ == "__main__":
     add()
