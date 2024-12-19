@@ -23,5 +23,6 @@ def tail(content: list[str]) -> list[str]:
 
 file_output(head(lines), filename="./output.txt")
 
-f = open("./output.txt", "r").read()
+f = open("./output.txt", "r")
+f.read()
 f.close()
