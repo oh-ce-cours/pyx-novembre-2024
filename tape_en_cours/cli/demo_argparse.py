@@ -1,5 +1,5 @@
 import argparse
-from tape_en_cours.cli.utils import addition
+from utils import addition
 
 
 def main():
