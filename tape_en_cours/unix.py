@@ -12,7 +12,7 @@ def file_output(content, filename):
     open(filename, "w", encoding="utf8").writelines(content)
 
 
-def head(content: list[str]) -> list[str]:
+def head(content):
     return content[:10]
 
 
