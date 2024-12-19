@@ -22,3 +22,10 @@ def tail(content: list[str]) -> list[str]:
 
 
 file_output(head(lines), filename="./output.txt")
+
+
+toto = True
+if toto == True:
+    zertgyhth = 3
+
+zertgyhth
