@@ -3,8 +3,8 @@ lines = f.readlines()
 f.close()
 
 
-def output(lines):
-    for line in lines:
+def output(content):
+    for line in content:
         print(line, end="")
 
 
