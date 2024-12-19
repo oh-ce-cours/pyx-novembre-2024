@@ -7,8 +7,8 @@ def soustraction(num1, num2):
 
 
 def main():
-    print(addition(1, 2))
-    print(soustraction(1, 2))
+    print(addition(1, 2) == 3)
+    print(soustraction(1, 2) == -1)
 
 
 if __name__ == "__main__":
