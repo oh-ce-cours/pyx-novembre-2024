@@ -11,7 +11,7 @@ def main():
     print(soustraction(1, 2) == -1)
 
 
-print("data creation ")
+print("data creation")
 data = [0 for _ in range(1_000_000_000)]
 
 if __name__ == "__main__":
