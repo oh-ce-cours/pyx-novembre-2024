@@ -3,7 +3,7 @@ from multiprocessing import Pool
 
 
 def compute(x):
-    time.sleep(1)
+    time.sleep(10)
     return x * x
 
 
