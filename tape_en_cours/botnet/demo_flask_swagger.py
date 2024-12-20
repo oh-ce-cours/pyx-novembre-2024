@@ -7,8 +7,8 @@ api = Api(app)
 todos = {}
 
 
-@api.route("/<string:todo_id>")
-class TodoSimple(Resource):
+@api.route("/action")
+class Action(Resource):
     def get(self, todo_id):
         return {todo_id: todos.get(todo_id)}
 
