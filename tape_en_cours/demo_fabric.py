@@ -1,7 +1,7 @@
-from fabric import ParallelGroup
+from fabric import ThreadingGroup
 
 # result = Connection(", "ubuntu").run("uname -s", hide=True)
-result = ParallelGroup("51.210.243.135", "146.59.156.185", user="ubuntu").run(
+result = ThreadingGroup("51.210.243.135", "146.59.156.185", user="ubuntu").run(
     "hostname", hide=True
 )
 for item in result.items():
