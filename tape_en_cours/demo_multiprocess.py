@@ -7,6 +7,8 @@ def compute(x):
     return x * x
 
 
+print("hello world")
+
 if __name__ == "__main__":
     with Pool(5) as p:
         print(p.map(compute, range(10)))
