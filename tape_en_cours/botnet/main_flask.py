@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/action", methods=["POST"])
 def action():
     data = request.get_json()
-    return {"salut": "les gars", {"pong": data}}
+    return {"salut": "les gars", "pong": data}
 
 
 @app.route("/")
