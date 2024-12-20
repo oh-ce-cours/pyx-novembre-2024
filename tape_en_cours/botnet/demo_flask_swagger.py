@@ -6,11 +6,9 @@ app = Flask(__name__)
 api = Api(app)
 
 model = api.model(
-    "Model",
+    "Action",
     {
-        "name": fields.String,
-        "address": fields.String,
-        "date_updated": fields.DateTime(dt_format="rfc822"),
+        "command": fields.String,
     },
 )
 
