@@ -2,7 +2,7 @@ from fabric import SerialGroup
 
 # result = Connection(", "ubuntu").run("uname -s", hide=True)
 result = SerialGroup("51.210.243.135", "146.59.156.185", user="ubuntu").run(
-    "hostname", hide=True, capture=True
+    "hostname", hide=True
 )
 for item in result.items():
     print(item, item.stdout)
