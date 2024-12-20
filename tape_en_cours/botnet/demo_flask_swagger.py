@@ -1,24 +1,20 @@
-from flask import Flask
-from flask_restplus import Api, Resource
+from flask import Flask, request
+from flask_restx import Api, Resource
 
 app = Flask(__name__)
-api = Api(
-    app,
-    version="1.0",
-    title="Sample API",
-    description="A sample API",
-)
+api = Api(app)
+
+todos = {}
 
 
-@api.route("/my-resource/<id>")
-@api.doc(params={"id": "An ID"})
-class MyResource(Resource):
-    def get(self, id):
-        return {}
+@api.route("/<string:todo_id>")
+class TodoSimple(Resource):
+    def get(self, todo_id):
+        return {todo_id: todos[todo_id]}
 
-    @api.response(403, "Not Authorized")
-    def post(self, id):
-        api.abort(403)
+    def put(self, todo_id):
+        todos[todo_id] = request.form["data"]
+        return {todo_id: todos[todo_id]}
 
 
 if __name__ == "__main__":
