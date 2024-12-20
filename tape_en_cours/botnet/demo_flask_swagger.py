@@ -5,6 +5,15 @@ from flask_restx import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
+model = api.model(
+    "Model",
+    {
+        "name": fields.String,
+        "address": fields.String,
+        "date_updated": fields.DateTime(dt_format="rfc822"),
+    },
+)
+
 
 @api.route("/action")
 class Action(Resource):
