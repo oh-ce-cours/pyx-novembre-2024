@@ -15,6 +15,7 @@ model = api.model(
 
 @api.route("/action")
 class Action(Resource):
+    @api.marshal_with(model, envelope="resource")
     def post(self):
         data = request.get_json()
         command = data["command"]
