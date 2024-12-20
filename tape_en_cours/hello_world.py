@@ -1,5 +1,3 @@
-import pandas
-
 print("hello world")
 print(1 == 2)
 
@@ -15,3 +13,5 @@ def fizzbuzz() -> int:
             resultat = nombre
         return resultat
 
+
+fizzbuzz
