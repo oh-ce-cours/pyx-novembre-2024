@@ -1,10 +1,10 @@
+import utils
 from fastapi import FastAPI
 
 app = FastAPI()
 
-fake_items_db = [{"item_name": "Foo"}, {"item_name": "Bar"}, {"item_name": "Baz"}]
 
-
-@app.get("/items/")
-async def read_item(skip: int = 0, limit: int = 10):
-    return fake_items_db[skip : skip + limit]
+@app.get("/actions/")
+async def read_item(command: dict):
+    args, return_code, result = utils.execute_command(command)
+    return
