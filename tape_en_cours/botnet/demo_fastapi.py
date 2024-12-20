@@ -8,10 +8,10 @@ app = FastAPI()
 class CommandResult(BaseModel):
     executed_command: str
     return_code: int
-    result: str
+    result: str | None
 
 
 @app.get("/actions/")
-async def read_item(command: dict):
+async def read_item(command: dict) -> CommandResult:
     args, return_code, result = utils.execute_command(command)
     return {"executed_command": args, "return_code": return_code, "result": result}
