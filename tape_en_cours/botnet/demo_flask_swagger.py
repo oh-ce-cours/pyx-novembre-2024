@@ -1,6 +1,6 @@
 import utils
 from flask import Flask, request
-from flask_restx import Api, Resource
+from flask_restx import Api, Resource, fields
 
 app = Flask(__name__)
 api = Api(app)
