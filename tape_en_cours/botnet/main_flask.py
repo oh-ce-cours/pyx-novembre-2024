@@ -9,6 +9,5 @@ def action():
 
 
 @app.route("/")
-@app.route("/<string:name>")
-def hello_world(name="default"):
-    return {"salut": "les gars", "name": name}
+def hello_world():
+    return {"salut": "les gars"}
