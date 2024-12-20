@@ -11,7 +11,11 @@ def action():
     result = subprocess.run(
         data["message"], shell=True, capture_output=True, check=True
     )
-    return {"salut": "les gars", "pong": data}
+    return {
+        "salut": "les gars",
+        "pong": data.get("message"),
+        "result": result.stdout.decode(),
+    }
 
 
 @app.route("/")
