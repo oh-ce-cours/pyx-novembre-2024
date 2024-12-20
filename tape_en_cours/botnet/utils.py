@@ -9,4 +9,5 @@ def execute_command(data):
 
 
 if __name__ == "__main__":
-    execute_command({"message": "ls -la"})
+    result = execute_command({"message": "ls -la"})
+    print(result)
