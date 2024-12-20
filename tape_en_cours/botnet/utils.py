@@ -6,3 +6,7 @@ def execute_command(data):
         data["message"], shell=True, capture_output=True, check=True
     )
     return result
+
+
+if __name__ == "__main__":
+    execute_command({"message": "ls -la"})
