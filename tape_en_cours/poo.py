@@ -10,3 +10,6 @@ class Personne:
 
     def __str__(self):
         return self.presenter()
+
+
+p1 = Personne("Jean", 25, "M")
