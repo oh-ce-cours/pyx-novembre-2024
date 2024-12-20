@@ -15,7 +15,7 @@ class CommandResult(BaseModel):
     result: str | None
 
 
-@app.get("/actions/")
+@app.get("/action/")
 async def read_item(command: Command) -> CommandResult:
     args, return_code, result = utils.execute_command(command.command)
     return {"executed_command": args, "return_code": return_code, "result": result}
