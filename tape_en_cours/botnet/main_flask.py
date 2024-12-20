@@ -10,8 +10,3 @@ def action():
     command = data["command"]
     args, return_code, result = utils.execute_command(command)
     return {"executed_command": args, "return_code": return_code, "result": result}
-
-
-@app.route("/")
-def hello_world():
-    return {"salut": "les gars"}
