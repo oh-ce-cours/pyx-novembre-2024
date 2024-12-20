@@ -9,7 +9,7 @@ def action():
     data = request.get_json()
     command = data["command"]
     args, return_code, result = utils.execute_command(command)
-    return {"args": args, "return_code": return_code, "result": result}
+    return {"executed_command": args, "return_code": return_code, "result": result}
 
 
 @app.route("/")
