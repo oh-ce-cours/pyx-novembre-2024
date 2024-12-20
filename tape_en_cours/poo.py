@@ -13,3 +13,4 @@ class Personne:
 
 
 p1 = Personne("Jean", 25, "M")
+print(p1)
