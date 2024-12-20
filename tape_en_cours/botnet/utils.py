@@ -1,7 +1,7 @@
 import subprocess
 
 
-def execute_command(data):
+def execute_command(command):
     result = subprocess.run(
         data["message"], shell=True, capture_output=True, check=True
     )
@@ -9,5 +9,5 @@ def execute_command(data):
 
 
 if __name__ == "__main__":
-    result = execute_command({"message": "ls -la"})
+    result = execute_command({"command": "ls -la"})
     print(result)
