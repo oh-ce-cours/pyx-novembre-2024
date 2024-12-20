@@ -10,7 +10,7 @@ todos = {}
 @api.route("/<string:todo_id>")
 class TodoSimple(Resource):
     def get(self, todo_id):
-        return {todo_id: todos[todo_id]}
+        return {todo_id: todos.get(todo_id)}
 
     def put(self, todo_id):
         todos[todo_id] = request.form["data"]
