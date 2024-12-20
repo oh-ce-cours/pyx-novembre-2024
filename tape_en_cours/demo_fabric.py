@@ -1,4 +1,4 @@
-from fabric import Connection
+from fabric import Connection, 
 
 
 def disk_free(c):
@@ -7,7 +7,6 @@ def disk_free(c):
         command = "df -h / | tail -n1 | awk '{print $5}'"
         return c.run(command, hide=True).stdout.strip()
     err = "No idea how to get disk space on {}!".format(uname)
-    raise Exit(err)
 
 
 result = Connection("51.210.243.135", "ubuntu").run("uname -s", hide=True)
