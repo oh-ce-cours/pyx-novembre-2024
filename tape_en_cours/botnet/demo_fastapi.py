@@ -9,9 +9,6 @@ class Command(BaseModel):
     command: str
 
 
-ROOT_PASSWORD = "toto"
-
-
 class CommandResult(BaseModel):
     executed_command: str
     return_code: int
