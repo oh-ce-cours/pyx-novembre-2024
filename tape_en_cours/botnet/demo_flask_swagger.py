@@ -7,7 +7,7 @@ api = Api(app)
 
 @api.route("/action")
 class Action(Resource):
-    def post(self, todo_id):
+    def post(self):
         todos[todo_id] = request.form["data"]
         return {todo_id: todos[todo_id]}
 
