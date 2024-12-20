@@ -7,3 +7,8 @@ app = Flask(__name__)
 @app.route("/<string:name>")
 def hello_world(name="default"):
     return {"salut": "les gars", "name": name}
+
+
+@app.route("/action")
+def action(name="default"):
+    return {"salut": "les gars", "name": name}
